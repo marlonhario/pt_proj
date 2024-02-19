@@ -1,0 +1,13 @@
+query GetMarketSymbol {
+    getMarketSymbol {
+        market {
+            id
+            symbol
+            name
+        }
+        errors {
+            message
+            field
+        }
+    }
+}

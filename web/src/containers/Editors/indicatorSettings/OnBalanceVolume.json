@@ -1,0 +1,28 @@
+{"OnBalanceVolume.json": {
+    "IndicatorName": "On Balance Volume",
+    "identification": "OBV",
+    "IndicatorProperties": [
+      {
+        "name": "OBV Rises",
+        "value": "rises",
+        "oppositeValue": "falls"
+      },
+      {
+        "name": "OBV Falls",
+        "value": "falls",
+        "oppositeValue": "rises"
+      },
+      {
+        "name": "OBV changes its direction upward",
+        "value": "change_upward",
+        "oppositeValue": "change_downward"
+      },
+      {
+        "name": "OBV changes its direction downward",
+        "value": "change_downward",
+        "oppositeValue": "change_upward"
+      }
+    ],
+    "Properties": [
+    ]
+  }}

@@ -1,0 +1,70 @@
+{
+  "IndicatorName": "Moving Average Convergence Divergence",
+  "IndicatorProperties": [
+    {
+      "name": "MACD rises",
+      "value": "macdrises"
+    },
+    {
+      "name": "MACD falls",
+      "value": "macdfalls"
+    }
+  ],
+  "Properties": [
+    {
+      "name": "Fast Period",
+      "accessor": "fastPeriod",
+      "type": "number",
+      "DefaultValue": 12,
+      "value": ""
+    },
+    {
+      "name": "Slow Period",
+      "accessor": "slowPeriod",
+      "type": "number",
+      "DefaultValue": 26,
+      "value": ""
+    },
+    {
+      "name": "Signal Period",
+      "accessor": "signalPeriod",
+      "type": "number",
+      "DefaultValue": 0,
+      "value": ""
+    },
+    {
+      "name": "Simple MA Oscillator",
+      "accessor": "SimpleMAOscillator",
+      "type": "select",
+      "DefaultValue": 0,
+      "value": "",
+      "SelectList": [
+        {
+          "name": "True",
+          "value": "true"
+        },
+        {
+          "name": "False",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "name": "Simple MA Signal",
+      "accessor": "SimpleMASignal",
+      "type": "select",
+      "DefaultValue": 0,
+      "value": "",
+      "SelectList": [
+        {
+          "name": "True",
+          "value": "true"
+        },
+        {
+          "name": "False",
+          "value": "false"
+        }
+      ]
+    }
+  ]
+}

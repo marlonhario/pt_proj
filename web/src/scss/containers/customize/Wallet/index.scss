@@ -1,0 +1,230 @@
+@mixin button-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.AddFunds__modal {
+    min-width: 80%;
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-content {
+        padding: 0 !important;
+    }
+
+    .tabs__wrap {
+        a.nav-link {
+            color: gray;
+            font-size: 18px;
+            font-weight: bold;
+
+            &.active {
+                color: black;
+            }
+        }
+    }
+
+    button.close {
+        @include button-close;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        color: gray;
+    }
+
+    .AddFunds__card.form {
+        .card-body {
+            background: white;
+            padding-bottom: 0;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        input {
+            height: 38px !important;
+            font-size: 1rem;
+        }
+
+        .AddFunds__full-withdrawal p {
+            border-bottom: 1px dotted gray;
+            text-align: left;
+            width: max-content;
+            margin: 20px 0;
+        }
+
+        .AddFunds__amount {
+            span.input-group-text {
+                background: none;
+            }
+        }
+
+        .AddFunds__note {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .AddFunds__frequency {
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        .AddFunds__note.second {
+            text-align: justify;
+        }
+
+        .AddFunds__form {
+            display: flex;
+            flex-direction: column;
+
+            .AddFunds__submit {
+
+                &.deposit,
+                &.withdrawal {
+                    margin-top: 10px;
+                    width: max-content;
+                    background: #fab131;
+                }
+            }
+        }
+    }
+
+    .AddFunds__total {
+        background: white;
+        height: auto;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+        .typography--inline {
+            justify-content: space-around;
+
+            h3 {
+                margin-top: 5px;
+            }
+
+            h1 span {
+                font-size: 20px;
+                font-weight: bold;
+                vertical-align: text-bottom;
+            }
+        }
+    }
+
+    .AddFunds__card-container {
+        background: #f2f4f7;
+    }
+
+    .AddFunds__card-body.main,
+    .AddFunds__card-container {
+        padding-bottom: 0;
+    }
+}
+
+.AddFunds__select-bank {
+    min-width: 50%;
+
+		.SearchBank__logo {
+			height: 60px;
+			width: 60px;
+			margin-right: 30px;
+		}
+
+		.SearchBank__list-group {
+			display: flex;
+			align-items: center;
+		}
+
+    .AddFunds__bank-list.header {
+        margin: 40px 0 20px;
+    }
+
+    .modal-body {
+        padding: 0;
+
+        .AddFunds__container {
+            padding-bottom: 0;
+        }
+    }
+
+    .modal-content {
+        padding: 0 !important;
+    }
+
+    .modal-footer {
+        text-align: justify;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        padding-bottom: 30px;
+
+    }
+
+    .AddFunds__search-field {
+        input {
+            margin: 30px 0 40px;
+            padding: 0 20px;
+        }
+    }
+
+    .AddFunds__bank-list {
+        height: auto;
+
+        .card-body {
+            justify-content: space-evenly;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            padding: 10px 20px;
+
+            .subhead {
+                margin-right: 20px;
+            }
+
+            h5.bold-text {
+                margin: unset;
+                display: flex;
+                justify-content: space-between;
+                flex: 1;
+                align-items: center;
+
+                svg {
+                    margin: 0;
+                }
+            }
+
+            .typography--inline {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        }
+    }
+
+    .AddFunds__bank-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    button.close {
+        @include button-close;
+    }
+}

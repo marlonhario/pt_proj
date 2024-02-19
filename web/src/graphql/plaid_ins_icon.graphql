@@ -1,0 +1,3 @@
+mutation PlaiInstitutionIcon($insId: String!) {
+  plaiInstitutionIcon(insId: $insId)
+}

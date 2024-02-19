@@ -1,0 +1,19 @@
+mutation GetDepositsById($data: AutoDepositInput!) {
+    getDepositsById(data: $data) {
+        deposit {
+            id
+            user_id
+            minimum_wallet_balance
+            amount_deposit
+            bank_account
+            created_date
+            is_auto
+            is_min_automatic
+            is_amt_automatic
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

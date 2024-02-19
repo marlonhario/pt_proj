@@ -1,0 +1,19 @@
+mutation Login($email: String!, $password: String!, $isRememberActive: Boolean!) {
+    login(email: $email, password: $password, isRememberActive: $isRememberActive) {
+        accessToken
+        rememberMeToken
+        user {
+            id
+            email
+            admin
+            first_name
+            last_name
+            profile_image
+            time_zone
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.History__container {
+	.card__title {
+		display: flex;
+    align-items: baseline;
+
+		h4 {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+
+	.History__transactions {
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		border-bottom: 1px solid #f2f4f7;
+
+		&:hover {
+			background: #f2f4f7;
+		}
+	}
+
+	.collapse__title {
+		position: relative;
+
+		& > p {
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			right: 30px;
+		}
+	}
+
+	.hide-previous {
+		visibility: hidden;
+	}
+	.hide-next {
+		visibility: hidden;
+	}
+}

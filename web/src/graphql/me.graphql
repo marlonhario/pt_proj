@@ -1,0 +1,11 @@
+query Me {
+  me {
+    id
+    email
+    admin
+    first_name
+    last_name
+    profile_image
+    time_zone
+  }
+}

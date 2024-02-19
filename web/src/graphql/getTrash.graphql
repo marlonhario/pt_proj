@@ -1,0 +1,12 @@
+query GetTrash($token: String!) {
+    getTrash(token: $token) {
+        strategies {
+            id
+            deleted_at
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

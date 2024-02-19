@@ -1,0 +1,21 @@
+query getPaperTrades {
+  getPaperTrades {
+    id
+    strategy_id
+    market_id
+    symbol
+    price
+    trade_amount
+    stop_loss
+    take_profit
+    profit
+    balance
+    date_time
+    open
+    high
+    low
+    close
+    volume
+    trade_type
+  }
+}

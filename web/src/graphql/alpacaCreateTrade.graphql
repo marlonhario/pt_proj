@@ -1,0 +1,19 @@
+mutation AlpacaCreateTrade(
+	$token: String!,
+	$symbol: String!,
+	$qty: Float!,
+	$side: String!,
+	$type: String!,
+	$timeInForce: String!
+	$userToken: String!
+) {
+  alpacaCreateTrade(
+		token: $token,
+		symbol: $symbol,
+		qty: $qty,
+		side: $side,
+		type: $type,
+		timeInForce: $timeInForce
+		userToken: $userToken
+	)
+}

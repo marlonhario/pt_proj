@@ -1,0 +1,22 @@
+mutation addMarket($symbol: String) {
+    addMarket(symbol: $symbol) {
+        id
+        name
+        symbol
+        equity
+        timezone
+        type
+        region
+        exchange
+        marketOpen
+        marketClose
+        matchScore
+        currency
+        period
+        first_data
+        last_data
+        number_data_records
+        data_last_downloaded
+        newAdded
+    }
+}

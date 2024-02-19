@@ -1,0 +1,3 @@
+mutation AlpacaAuthorize($code: String!) {
+  alpacaAuthorize(code: $code)
+}

@@ -1,0 +1,23 @@
+mutation marketsSearch(
+  $symbol: String
+  $haveData: Boolean
+  $options: SearchType
+) {
+  marketsSearch(symbol: $symbol, haveData: $haveData, options: $options) {
+    id
+    name
+    symbol
+    timezone
+    type
+    marketOpen
+    marketClose
+    timezone
+    currency
+    matchScore
+    exchange
+    period
+    number_data_records
+    first_data
+    last_data
+  }
+}

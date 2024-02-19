@@ -1,0 +1,11 @@
+mutation GetBankAccountList($data: BankAccountInput!) {
+    getBankAccountList(data: $data) {
+        errors {
+            field
+            message
+        }
+        bank {
+            name
+        }
+    }
+}

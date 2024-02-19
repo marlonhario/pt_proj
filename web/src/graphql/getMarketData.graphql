@@ -1,0 +1,14 @@
+mutation getMarketData($marketId: Int!, $symbol: String!, $interval: String!) {
+  getMarketData(marketId: $marketId, symbol: $symbol, interval: $interval) {
+    id
+    interval
+    marketId
+    symbol
+    last_update
+    open
+    high
+    low
+    close
+    volume
+  }
+}

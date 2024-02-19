@@ -1,0 +1,6 @@
+query getAllLogs{
+    allLogs{
+        id
+        signal_logs
+    }
+}

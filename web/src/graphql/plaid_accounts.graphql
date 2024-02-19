@@ -1,0 +1,3 @@
+mutation PlaidAccounts($token: String!) {
+  plaidAccounts(token: $token)
+}

@@ -1,0 +1,11 @@
+mutation DeleteStrategies($id: String!) {
+    deleteStrategies(id: $id) {
+        strategies {
+            id
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

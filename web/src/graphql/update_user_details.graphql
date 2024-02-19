@@ -1,0 +1,13 @@
+mutation updateUserDetails($token: String!, $data: UpdateUserInput!) {
+    updateUserDetails(token: $token, data: $data) {
+        user {
+            id
+            email
+            admin
+            first_name
+            last_name
+            profile_image
+            time_zone
+        }
+    }
+}

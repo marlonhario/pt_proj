@@ -1,0 +1,3 @@
+mutation PlaidMail($mailContent: String!, $token: String!) {
+  plaidMail(mailContent: $mailContent, token: $token)
+}

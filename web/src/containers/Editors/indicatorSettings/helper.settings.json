@@ -1,0 +1,88 @@
+{
+  "policy": {
+    "payload": {
+      "indicators": { "type": "object" },
+      "stocks": { "type": "object" },
+      "callback": { "type": "function" },
+      "stopLoss": { "type": "number" },
+      "slippage": { "type": "number" }
+    },
+    "indicator": [
+      {
+        "key": "indicator",
+        "type": "string",
+        "values": ["AO", "MACD"],
+        "doDataCheck": "listed"
+      },
+      {
+        "key": "data",
+        "type": "object",
+        "doDataCheck": "validateIndicator",
+        "values": {
+          "AO": [
+            {
+              "key": "high",
+              "type": "array",
+              "doDataCheck": "empty",
+              "values": []
+            },
+            {
+              "key": "low",
+              "type": "array",
+              "doDataCheck": "empty",
+              "values": []
+            },
+            { "key": "fastPeriod", "type": "number", "values": [] },
+            { "key": "slowPeriod", "type": "number", "values": [] },
+            { "key": "format", "type": "function", "values": [] },
+            { "key": "levelLine", "type": "number", "values": [] },
+            {
+              "key": "signal",
+              "type": "string",
+              "values": [
+                "isAboveLevelLine",
+                "isBelowLevelLine",
+                "isCrossingLineUpward",
+                "isCrossingLineDownward",
+                "isChangingUpward",
+                "isChangingDownward",
+                "isSignalRising",
+                "isSignalFalling"
+              ],
+              "doDataCheck": "listed"
+            }
+          ],
+          "MACD": [
+            {
+              "key": "values",
+              "type": "array",
+              "doDataCheck": "empty",
+              "values": []
+            },
+            { "key": "fastPeriod", "type": "number", "values": [] },
+            { "key": "slowPeriod", "type": "number", "values": [] },
+            { "key": "signalPeriod", "type": "number", "values": [] },
+            { "key": "SimpleMAOscillator", "type": "boolean", "values": [] },
+            { "key": "SimpleMAOscillator", "type": "boolean", "values": [] },
+            {
+              "key": "signal",
+              "type": "string",
+              "values": [
+                "isAboveZeroLine",
+                "isBelowZeroLine",
+                "isCrossingZeroUpward",
+                "isCrossingZeroDownward",
+                "isChangingUpward",
+                "isChangingDownward",
+                "isSignalRising",
+                "isSignalFalling"
+              ],
+              "doDataCheck": "listed"
+            }
+          ]
+        }
+      },
+      { "key": "callback", "type": "function", "values": [] }
+    ]
+  }
+}

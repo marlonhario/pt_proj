@@ -1,0 +1,9 @@
+mutation DeleteAllStrategies($token: String!) {
+    deleteAllStrategies(token: $token) {
+        errors {
+            field
+            message
+        }
+        strategies
+    }
+}

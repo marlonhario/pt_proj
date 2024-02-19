@@ -1,0 +1,25 @@
+######################################
+#Directories
+######################################
+/node_modules
+/cypress/screenshots/
+/cypress/videos/
+/dist
+
+
+######################################
+#Files
+######################################
+.env
+nohup.out
+server/.ormconfig.json
+/config/graphql/codegen.yml
+
+
+
+################################
+#Nodemon Config for local dev
+################################
+nodemon.json
+debug.log
+.vscode/settings.json

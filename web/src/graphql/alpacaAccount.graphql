@@ -1,0 +1,7 @@
+mutation AlpacaAccount(
+	$token: String!
+) {
+  alpacaAccount(
+		token: $token
+	)
+}

@@ -1,0 +1,33 @@
+.modern-checkbox-container {
+    margin: 8px 0;
+    display: flex;
+  }
+  
+  .checkbox-outer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .checkbox-tick {
+    width: 0;
+    height: 0;
+    transition: all 0.1s linear;
+  }
+  .selected-checkbox-tick {
+    width: 30px;
+    height: 18px;
+  }
+  .helper-text {
+    user-select: none;
+    color: #666;
+    padding: 0 8px;
+  }
+  .selected-checkbox-tick-normal {
+    width: 18px;
+    height: 18px;
+  }

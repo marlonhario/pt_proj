@@ -1,0 +1,26 @@
+mutation saveStrategy($options: GetStrategyProfileArgs!, $token: String!) {
+  saveStrategy(options: $options, token: $token) {
+    created_by_user_id
+    id
+    created_by_user_id
+    editor_json
+    average_hpr
+    average_position_length
+    backtest_quality_percent
+    balance_line_stability
+    bars_in_trade_number
+    bars_in_trade_percent
+    count_of_trades
+    net_balance
+    net_profit
+    profit_factor
+    profit_per_day
+    r_squared
+    return_drawdown
+    sharpe_ratio
+    max_stagnation_number
+    max_stagnation_percent
+    system_quality_number
+    win_loss
+  }
+}

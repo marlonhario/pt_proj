@@ -1,0 +1,20 @@
+mutation PlaidCreateAccount(
+  $token: String!
+  $accountId: String!
+  $accountName: String!
+  $institution: String!
+  $accountNumber: String!
+  $institutionId: String!
+  $InstitutionLogo: String!
+) {
+  plaidCreateAccount(
+    token: $token
+    accountId: $accountId
+    accountName: $accountName
+    institution: $institution
+    accountNumber: $accountNumber
+    institutionId: $institutionId
+    InstitutionLogo: $InstitutionLogo
+  )
+}
+

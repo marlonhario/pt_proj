@@ -1,0 +1,16 @@
+export const transactionsData = [
+	{ id: 1216, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "deposit", balance: "5,000", amount: "20", date: "2020-05-30", name: "deposits" },
+	{ id: 1210, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "deposit", balance: "5,000", amount: "-15", date: "2020-03-29", name: "trades" },
+	{ id: 1216, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "trade", balance: "4,965", amount: "-35", date: "2020-05-30", name: "trades" },
+	{ id: 1215, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "trade", balance: "4,943", amount: "-22", date: "2020-05-30", name: "trades" },
+	{ id: 1214, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "trade", balance: "4,908.5", amount: "-34.5", date: "2020-01-30", name: "trades" },
+	{ id: 1103, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "trade", balance: "4,888.5", amount: "-20", date: "2020-01-30", name: "trades" },
+	{ id: 1102, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "dividend", balance: "4,938.5", amount: "50", date: "2019-05-30", name: "shared strategies" },
+	{ id: 1101, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "trade", balance: "4,897.5", amount: "-41", date: "2019-05-30", name: "trades" },
+	{ id: 1213, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "trade", balance: "4,863.9", amount: "-33.6", date: "2019-01-30", name: "trades" },
+	{ id: 1100, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "deposit", balance: "5,063.9", amount: "200", date: "2019-01-30", name: "deposit" },
+	{ id: 1099, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "trade", balance: "5,029.4", amount: "-34.5", date: "2018-05-30", name: "trades" },
+	{ id: 1212, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "deposit", balance: "5,129.4", amount: "100", date: "2018-05-30", name: "deposit" },
+	{ id: 1211, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "trade", balance: "5,064.4", amount: "-65", date: "2018-01-30", name: "trades" },
+	{ id: 1098, currency_code: "US", account_id: "nv7w6a8rMmTpqn4zXzGbfVexll86Xbc69wwq8", transaction_type: "trade", balance: "5,009.4", amount: "-55", date: "2018-01-30", name: "trades" },
+]

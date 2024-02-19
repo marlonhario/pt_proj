@@ -1,0 +1,47 @@
+{
+  "IndicatorName": "ATR",
+  "IndicatorProperties": [
+    {
+      "name": "ATR rises",
+      "value": "somevalue"
+    },
+    {
+      "name": "ATR falls",
+      "value": "adxfallsvalue"
+    }
+  ],
+  "Properties": [
+    {
+      "name": "Period",
+      "type": "number",
+      "DefaultValue": 14,
+      "value": ""
+    },
+    {
+      "name": "Level",
+      "type": "number",
+      "DefaultValue": 0,
+      "value": ""
+    },
+    {
+      "name": "Apply to",
+      "type": "select",
+      "DefaultValue": 0,
+      "value": "",
+      "SelectList": [
+        {
+          "name": "Close",
+          "value": "close"
+        },
+        {
+          "name": "Open",
+          "value": "open"
+        },
+        {
+          "name": "High",
+          "value": "high"
+        }
+      ]
+    }
+  ]
+}

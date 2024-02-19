@@ -1,0 +1,4 @@
+mutation PlaidAccountRemove($id: Float!) {
+  plaidAccountRemove(id: $id)
+}
+

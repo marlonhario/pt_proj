@@ -1,0 +1,17 @@
+query getStrategies($token: String!, $sort_id: String!, $type: String!, $data: StrategiesCriteria!) {
+    getStrategies(token: $token, sort_id: $sort_id, type: $type, data: $data) {
+        strategy {
+            id
+            net_profit
+            profit_per_day
+            max_drawdown_number
+            return_drawdown
+            count_of_trades
+            original_created_date
+            editor_json
+        }
+        hasData
+        start
+        end
+    }
+}

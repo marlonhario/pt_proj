@@ -1,0 +1,3 @@
+mutation PlaidAccess($plaidToken: String!) {
+  plaidAccess(plaidToken: $plaidToken)
+}

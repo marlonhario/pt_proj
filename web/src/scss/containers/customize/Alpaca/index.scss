@@ -1,0 +1,21 @@
+.AlpacaContent__container {
+	.Trades__table .table-responsive {
+		min-height: 500px !important;
+	}
+
+	.pagination {
+		justify-content: center;
+	}
+}
+
+.Broker__container {
+
+	a.btn {
+    margin: 0px;
+	}
+
+	.Broker__status,
+	.Broker__badge {
+		text-align: end;
+	}
+}

@@ -1,0 +1,3 @@
+mutation TransferStrategies($id: String!) {
+    transferStrategies(id: $id)
+}

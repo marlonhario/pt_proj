@@ -1,0 +1,14 @@
+mutation getAlphavantageMarketData($symbol: String!, $interval: String!) {
+  getAlphavantageMarketData(symbol: $symbol, interval: $interval) {
+    alphavantage_market_data {
+      interval
+      symbol
+      last_update
+      open
+      high
+      low
+      close
+      volume
+    }
+  }
+}

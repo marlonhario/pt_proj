@@ -1,0 +1,2016 @@
+{
+    "MACD.json": {
+        "IndicatorName": "Moving Average Convergence Divergence",
+        "identification": "MACD",
+        "IndicatorProperties": [
+            {
+                "name": "MACD line rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "MACD line falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "MACD line is higher than the Zero line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "MACD line is lower than the Zero line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "MACD line crosses the zero line upward",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "MACD line crosses the zero line downward",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "MACD line changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "MACD line changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Fast Period",
+                "accessor": "fastPeriod",
+                "type": "number",
+                "DefaultValue": 12,
+                "value": 12
+            },
+            {
+                "name": "Slow Period",
+                "accessor": "slowPeriod",
+                "type": "number",
+                "DefaultValue": 26,
+                "value": 26
+            },
+            {
+                "name": "Signal Period",
+                "accessor": "signalPeriod",
+                "type": "number",
+                "DefaultValue": 9,
+                "value": 9
+            },
+            {
+                "name": "Simple MA Oscillator",
+                "accessor": "simpleMAOscillator",
+                "type": "select",
+                "DefaultValue": true,
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "True",
+                        "value": true
+                    },
+                    {
+                        "name": "False",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "name": "Simple MA Signal",
+                "accessor": "simpleMASignal",
+                "type": "select",
+                "DefaultValue": true,
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "True",
+                        "value": true
+                    },
+                    {
+                        "name": "False",
+                        "value": false
+                    }
+                ]
+            }
+        ]
+    },
+    "OnBalanceVolume.json": {
+        "IndicatorName": "On Balance Volume",
+        "identification": "OBV",
+        "IndicatorProperties": [
+            {
+                "name": "OBV Rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "OBV Falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "OBV changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "OBV changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": []
+    },
+    "MoneyFlowIndex.json": {
+        "IndicatorName": "Money Flow Index",
+        "identification": "MFI",
+        "IndicatorProperties": [
+            {
+                "name": "MFI Rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "MFI Falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "MFI is higher than the level line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "MFI is lower than the level line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "MFI crosses the level line upward",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "MFI crosses the level line downward",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "MFI changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "MFI changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "accessor": "period",
+                "type": "number",
+                "DefaultValue": 14,
+                "value": 14
+            },
+            {
+                "name": "Level Line",
+                "accessor": "levelLine",
+                "type": "number",
+                "DefaultValue": 20,
+                "value": 0
+            }
+        ]
+    },
+    "CommodityChannelIndex.json": {
+        "IndicatorName": "Commodity Channel Index",
+        "identification": "CCI",
+        "IndicatorProperties": [
+            {
+                "name": "CCI Rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "CCI Falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "CCI is higher than the level line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "CCI is lower than the level line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "CCI crosses the level line upward",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "CCI crosses the level line downward",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "CCI changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "CCI changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "accessor": "period",
+                "type": "number",
+                "DefaultValue": 14,
+                "value": 14
+            },
+            {
+                "name": "Level Line",
+                "accessor": "levelLine",
+                "type": "number",
+                "DefaultValue": 100,
+                "value": 0
+            },
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "typical",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Median",
+                        "value": "median"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    }
+                ]
+            }
+        ]
+    },
+    "AwesomeOscillator.json": {
+        "IndicatorName": "Awesome Oscillator",
+        "identification": "AO",
+        "IndicatorProperties": [
+            {
+                "name": "AC Rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "AC Falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "AC is higher than the level line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "AC is lower than the level line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "AC crosses the level line upward",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "AC crosses the level line upward",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "AC changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "AC changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Fast Period",
+                "accessor": "fastPeriod",
+                "type": "number",
+                "DefaultValue": 12,
+                "value": 12
+            },
+            {
+                "name": "Slow Period",
+                "accessor": "slowPeriod",
+                "type": "number",
+                "DefaultValue": 26,
+                "value": 26
+            },
+            {
+                "name": "Level Line",
+                "accessor": "levelLine",
+                "type": "number",
+                "DefaultValue": 0,
+                "value": 0
+            }
+        ]
+    },
+    "ADX.json": {
+        "IndicatorName": "ADX",
+        "identification": "ADX",
+        "IndicatorProperties": [
+            {
+                "name": "ADX rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "ADX falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "ADX crosses the level line upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "ADX crosses the level line downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "ADX changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "ADX changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 14,
+                "accessor": "period",
+                "value": 14
+            },
+            {
+                "name": "Level",
+                "type": "number",
+                "accessor": "levelLine",
+                "DefaultValue": 0,
+                "value": 0
+            }
+        ]
+    },
+    "MovingAverage.json": {
+        "IndicatorName": "Moving Average",
+        "identification": "MA",
+        "IndicatorProperties": [
+            {
+                "name": "Moving Average rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "Moving Average falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "The bar opens above Moving Average",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "The bar opens below Moving Average",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "The bar opens above Moving Average after opening below it",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "The bar opens below Moving Average after opening above it",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "Moving Average changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "Moving Average changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Simple",
+                        "value": "simple"
+                    },
+                    {
+                        "name": "Weighted",
+                        "value": "weighted"
+                    },
+                    {
+                        "name": "Exponential",
+                        "value": "exponential"
+                    },
+                    {
+                        "name": "Double Exponential",
+                        "value": "doubleExponential"
+                    },
+                    {
+                        "name": "Smoothed",
+                        "value": "smoothed"
+                    },
+                    {
+                        "name": "Hull MA",
+                        "value": "hull"
+                    }
+                ]
+            },
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 14,
+                "accessor": "period",
+                "value": 14
+            },
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Median",
+                        "value": "median"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    },
+                    {
+                        "name": "Weighted",
+                        "value": "weighted"
+                    }
+                ]
+            }
+        ]
+    },
+    "RSI.json": {
+        "IndicatorName": "RSI",
+        "identification": "RSI",
+        "IndicatorProperties": [
+            {
+                "name": "RSI rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "RSI falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "RSI is higher than the Level line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "RSI is lower than the Level line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "RSI crosses the Level line upward",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "RSI crosses the Level line downward",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "RSI changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "RSI changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 14,
+                "accessor": "period",
+                "value": 14
+            },
+            {
+                "name": "Level",
+                "type": "number",
+                "DefaultValue": 30,
+                "accessor": "levelLine",
+                "value": 30
+            },
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Median",
+                        "value": "median"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    },
+                    {
+                        "name": "Weighted",
+                        "value": "weighted"
+                    }
+                ]
+            }
+        ]
+    },
+    "BB.json": {
+        "IndicatorName": "Bollinger Bands",
+        "identification": "BB",
+        "IndicatorProperties": [
+            {
+                "name": "The bar opens below the Upper Band after opening above it",
+                "value": "lower_than_lower_band",
+                "oppositeValue": "higher_than_upper_band"
+            },
+            {
+                "name": "The bar opens above the Upper Band after opening below it",
+                "value": "higher_than_upper_band",
+                "oppositeValue": "lower_than_lower_band"
+            },
+            {
+                "name": "The bar opens below the Lower Band after opening above it",
+                "value": "crosses_upper_band_upwards",
+                "oppositeValue": "crosses_upper_band_downwards"
+            },
+            {
+                "name": "The bar opens above the Lower Band after opening below it",
+                "value": "crosses_upper_band_downwards",
+                "oppositeValue": "crosses_upper_band_upwards"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 20,
+                "accessor": "period",
+                "value": 20
+            },
+            {
+                "name": "Deviation",
+                "type": "number",
+                "DefaultValue": 2.0,
+                "accessor": "deviation",
+                "value": 2.0
+            },
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Median",
+                        "value": "median"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    },
+                    {
+                        "name": "Weighted",
+                        "value": "weighted"
+                    }
+                ]
+            }
+        ]
+    },
+    "KST.json": {
+        "IndicatorName": "Know Sure Thing",
+        "identification": "KST",
+        "IndicatorProperties": [
+            {
+                "name": "KST rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "KST falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "KST crosses the upper band upwards",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "KST crosses the upper band downwards",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "KST crosses the lower band upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "KST crosses the lower band downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Signal Period",
+                "type": "number",
+                "DefaultValue": 0,
+                "accessor": "signalPeriod",
+                "value": 20
+            },
+            {
+                "name": "ROC PERIOD #1",
+                "type": "number",
+                "DefaultValue": 10,
+                "accessor": "roc1",
+                "value": 20
+            },
+            {
+                "name": "ROC PERIOD #2",
+                "type": "number",
+                "DefaultValue": 15,
+                "accessor": "roc2",
+                "value": 20
+            },
+            {
+                "name": "ROC PERIOD #3",
+                "type": "number",
+                "DefaultValue": 20,
+                "accessor": "roc3",
+                "value": 20
+            },
+            {
+                "name": "ROC PERIOD #4",
+                "type": "number",
+                "DefaultValue": 30,
+                "accessor": "roc4",
+                "value": 30
+            },
+            {
+                "name": "Period SMA of ROC #1",
+                "type": "number",
+                "DefaultValue": 10,
+                "accessor": "rocSma1",
+                "value": 10
+            },
+            {
+                "name": "Period SMA of ROC #2",
+                "type": "number",
+                "DefaultValue": 10,
+                "accessor": "rocSma2",
+                "value": 10
+            },
+            {
+                "name": "Period SMA of ROC #3",
+                "type": "number",
+                "DefaultValue": 10,
+                "accessor": "rocSma3",
+                "value": 10
+            },
+            {
+                "name": "Period SMA of ROC #4",
+                "type": "number",
+                "DefaultValue": 15,
+                "accessor": "rocSma4",
+                "value": 15
+            }
+        ]
+    },
+    "FI.json": {
+        "IndicatorName": "Force Index",
+        "identification": "FI",
+        "IndicatorProperties": [
+            {
+                "name": "FI rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "FI falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "FI crosses the upper band upwards",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "FI crosses the upper band downwards",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "FI crosses the lower band upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "FI crosses the lower band downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 13,
+                "accessor": "period",
+                "value": 13
+            },
+            {
+                "name": "MA method",
+                "type": "select",
+                "DefaultValue": "simple",
+                "accessor": "maMethod",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Simple",
+                        "value": "simple"
+                    },
+                    {
+                        "name": "Weighted",
+                        "value": "weighted"
+                    },
+                    {
+                        "name": "Exponential",
+                        "value": "exponential"
+                    },
+                    {
+                        "name": "Smoothed",
+                        "value": "smoothed"
+                    }
+                ]
+            }
+        ]
+    },
+    "WPR.json": {
+        "IndicatorName": "Williams R",
+        "identification": "WPR",
+        "IndicatorProperties": [
+            {
+                "name": "WPR line rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "WPR line falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "WPR line crosses the zero line upward",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "WPR line crosses the zero line downward",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "WPR line changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "WPR line changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 14,
+                "accessor": "period",
+                "value": 14
+            },
+            {
+                "name": "Level",
+                "type": "number",
+                "DefaultValue": -20,
+                "accessor": "level",
+                "value": -20
+            }
+        ]
+    },
+    "ADL.json": {
+        "IndicatorName": "Accumulation Distribution (ADL)",
+        "identification": "ADL",
+        "IndicatorProperties": [
+            {
+                "name": "AD rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "AD falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+
+            {
+                "name": "AD changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "AD changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": []
+    },
+    "ATR.json": {
+        "IndicatorName": "Average True Range",
+        "identification": "ATR",
+        "IndicatorProperties": [
+            {
+                "name": "ATR line rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "ATR line falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "ATR line crosses the zero line upward",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "ATR is higher than the level line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "ATR is lower than the level line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "ATR line crosses the zero line downward",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "ATR line changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "ATR line changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 14,
+                "accessor": "period",
+                "value": 14
+            },
+            {
+                "name": "Level",
+                "type": "number",
+                "DefaultValue": 0.01,
+                "accessor": "level",
+                "value": 0.01
+            }
+        ]
+    },
+    "ALMA.json": {
+        "IndicatorName": "Arnaud Legoux Moving Average (ALMA)",
+        "identification": "ALMA",
+        "IndicatorProperties": [
+            {
+                "name": "ALMA rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "ALMA falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "The bar opens above ALMA",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "The bar opens below ALMA",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "The bar opens above ALMA after opening below it",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "The bar opens below ALMA after opening above it",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "ALMA changes its direction upwards",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "ALMA changes its direction downwards",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period (Window)",
+                "type": "number",
+                "DefaultValue": 9,
+                "accessor": "period",
+                "value": 9
+            },
+            {
+                "name": "Offset",
+                "type": "number",
+                "DefaultValue": 0.85,
+                "accessor": "offset",
+                "value": 0.85
+            },
+            {
+                "name": "Sigma",
+                "type": "number",
+                "DefaultValue": 6,
+                "accessor": "sigma",
+                "value": 6
+            },
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Median",
+                        "value": "median"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    }
+                ]
+            }
+        ]
+    },
+    "CO.json": {
+        "IndicatorName": "Chaikin Oscillator (CO)",
+        "identification": "CO",
+        "IndicatorProperties": [
+            {
+                "name": "CO rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "CO falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "CO crosses the zero line upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "CO crosses the zero line downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "CO changes its direction upwards",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "CO changes its direction downwards",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Fast Period",
+                "type": "number",
+                "DefaultValue": 3,
+                "accessor": "fastPeriod",
+                "value": 3
+            },
+            {
+                "name": "Slow Period",
+                "type": "number",
+                "DefaultValue": 10,
+                "accessor": "slowPeriod",
+                "value": 10
+            }
+        ]
+    },
+    "ENV.json": {
+        "IndicatorName": "Envelope",
+        "identification": "ENV",
+        "IndicatorProperties": [
+            {
+                "name": "ENV rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "ENV falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "ENV is higher than the upper band",
+                "value": "higher_than_upper_band",
+                "oppositeValue": "lower_than_lower_band"
+            },
+            {
+                "name": "ENV is lower than the lower band",
+                "value": "lower_than_lower_band",
+                "oppositeValue": "higher_than_upper_band"
+            },
+            {
+                "name": "ENV crosses the upper band upwards",
+                "value": "crosses_upper_band_upwards",
+                "oppositeValue": "crosses_upper_band_downwards"
+            },
+            {
+                "name": "ENV crosses the upper band downwards",
+                "value": "crosses_upper_band_downwards",
+                "oppositeValue": "crosses_upper_band_upwards"
+            },
+            {
+                "name": "ENV crosses the lower band upwards",
+                "value": "crosses_lower_band_upwards",
+                "oppositeValue": "crosses_lower_band_downwards"
+            },
+            {
+                "name": "ENV crosses the lower band downwards",
+                "value": "crosses_lower_band_downwards",
+                "oppositeValue": "crosses_lower_band_upwards"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "MA method",
+                "type": "select",
+                "DefaultValue": "simple",
+                "accessor": "maMethod",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Simple",
+                        "value": "simple"
+                    },
+                    {
+                        "name": "Exponential",
+                        "value": "exponential"
+                    }
+                ]
+            },
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "typical",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Median",
+                        "value": "median"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    }
+                ]
+            },
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 20,
+                "accessor": "period",
+                "value": 20
+            },
+            {
+                "name": "Percent",
+                "type": "number",
+                "DefaultValue": 10,
+                "accessor": "percent",
+                "value": 10
+            }
+        ]
+    },
+    "LSMA.json": {
+        "IndicatorName": "Least Squares Moving Average",
+        "identification": "LSMA",
+        "IndicatorProperties": [
+            {
+                "name": "LSMA rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "LSMA falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "The bar opens above LSMA",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "The bar opens below LSMA",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "The bar opens above LSMA after opening below it",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "The bar opens below LSMA after opening above it",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "LSMA changes its direction upwards",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "LSMA changes its direction downwards",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 25,
+                "accessor": "period",
+                "value": 25
+            },
+            {
+                "name": "Offset",
+                "type": "number",
+                "DefaultValue": 0,
+                "accessor": "offset",
+                "value": 0
+            },
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Median",
+                        "value": "median"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    }
+                ]
+            }
+        ]
+    },
+    "UO.json": {
+        "IndicatorName": "Ultimate Oscillator",
+        "identification": "UO",
+        "IndicatorProperties": [
+            {
+                "name": "UO rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "UO falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "UO is higher than the level line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "UO is lower than the level line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "UO crosses the level line upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "UO crosses the level line downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "UO changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "UO changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    }
+                ]
+            },
+            {
+                "name": "Period 1",
+                "type": "number",
+                "DefaultValue": 7,
+                "accessor": "period1",
+                "value": 7
+            },
+            {
+                "name": "Period 2",
+                "type": "number",
+                "DefaultValue": 14,
+                "accessor": "period2",
+                "value": 14
+            },
+            {
+                "name": "Period 3",
+                "type": "number",
+                "DefaultValue": 28,
+                "accessor": "period3",
+                "value": 28
+            },
+            {
+                "name": "Level Line",
+                "type": "number",
+                "DefaultValue": 30,
+                "accessor": "levelLine",
+                "value": 30
+            }
+        ]
+    },
+    "AROON.json": {
+        "IndicatorName": "Aroon",
+        "identification": "AROON",
+        "IndicatorProperties": [
+            {
+                "name": "Aroon rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "Aroon falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "Aroon is higher than the level line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "Aroon is lower than the level line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "Aroon crosses the level line upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "Aroon crosses the level line downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "Aroon changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "Aroon changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Aroon Type",
+                "type": "select",
+                "DefaultValue": "up",
+                "accessor": "aroonType",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Up",
+                        "value": "up"
+                    },
+                    {
+                        "name": "Down",
+                        "value": "down"
+                    }
+                ]
+            },
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 14,
+                "accessor": "period",
+                "value": 14
+            },
+            {
+                "name": "Level Line",
+                "type": "number",
+                "DefaultValue": 50,
+                "accessor": "levelLine",
+                "value": 50
+            }
+        ]
+    },
+    "BOP.json": {
+        "IndicatorName": "Balance of Power",
+        "identification": "BOP",
+        "IndicatorProperties": [
+            {
+                "name": "BOP rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "BOP falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "BOP is higher than the zero line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "BOP is lower than the zero line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "BOP crosses the zero line upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "BOP crosses the zero line downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "BOP changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "BOP changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": []
+    },
+    "PercentageBand.json": {
+        "IndicatorName": "Bollinger Bands %B (%B)",
+        "identification": "PB",
+        "IndicatorProperties": [
+            {
+                "name": "%B rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "%B falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "%B is higher than level line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "%B is lower than level line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "%B crosses the level line upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "%B crosses the zero line downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "%B changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "%B changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+
+        "Properties": [
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Median",
+                        "value": "medianPrice"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    }
+                ]
+            },
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 20,
+                "accessor": "period",
+                "value": 14
+            },
+            {
+                "name": "Deviation",
+                "type": "number",
+                "DefaultValue": 2.0,
+                "accessor": "deviation",
+                "value": 2.0
+            },
+            {
+                "name": "Level",
+                "type": "number",
+                "DefaultValue": 1.0,
+                "accessor": "levelLine",
+                "value": 1.0
+            }
+        ]
+    },
+    "BBW.json": {
+        "IndicatorName": "Bollinger Bands Width (BBW)",
+        "identification": "BBW",
+        "IndicatorProperties": [
+            {
+                "name": "BBW rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "BBW falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "BBW is higher than level line",
+                "value": "above_level_line",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "BBW is lower than level line",
+                "value": "below_level_line",
+                "oppositeValue": "above_level_line"
+            },
+            {
+                "name": "BBW crosses the level line upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "BBW crosses the zero line downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "BBW changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "BBW changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+
+        "Properties": [
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Median",
+                        "value": "medianPrice"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    }
+                ]
+            },
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 20,
+                "accessor": "period",
+                "value": 14
+            },
+            {
+                "name": "Deviation",
+                "type": "number",
+                "DefaultValue": 2.0,
+                "accessor": "deviation",
+                "value": 2.0
+            },
+            {
+                "name": "Level",
+                "type": "number",
+                "DefaultValue": 0.06,
+                "accessor": "levelLine",
+                "value": 0.06
+            }
+        ]
+    },
+    "CMF.json": {
+        "IndicatorName": "Chaikin Money Flow (CMF)",
+        "identification": "CMF",
+        "IndicatorProperties": [
+            {
+                "name": "CMF rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "CMF falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "CMF crosses the level line upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "CMF crosses the level line downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "CMF changes its direction upwards",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "CMF changes its direction downwards",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 20,
+                "accessor": "period",
+                "value": 20
+            },
+            {
+                "name": "Level",
+                "type": "number",
+                "DefaultValue": 0.0,
+                "accessor": "levelLine",
+                "value": 0.0
+            }
+        ]
+    },
+    "VWMA.json": {
+        "IndicatorName": "Volume-Weighted Moving Average (VWMA)",
+        "identification": "VWMA",
+        "IndicatorProperties": [
+            {
+                "name": "VWMA rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "VWMA falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "The bar opens above VWMA",
+                "value": "bar_opens_above",
+                "oppositeValue": "below_level_line"
+            },
+            {
+                "name": "The bar opens below VWMA",
+                "value": "bar_opens_below",
+                "oppositeValue": "bar_opens_above"
+            },
+            {
+                "name": "The bar opens above VWMA after opening below it",
+                "value": "bar_opens_above_after_opening",
+                "oppositeValue": "bar_opens_below_after_opening"
+            },
+            {
+                "name": "The bar opens below VWMA after opening below it",
+                "value": "bar_opens_below_after_opening",
+                "oppositeValue": "bar_opens_above_after_opening"
+            },
+            {
+                "name": "VWMA changes its direction upward",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "VWMA changes its direction downward",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 20,
+                "accessor": "period",
+                "value": 20
+            },
+            {
+                "name": "Offset",
+                "type": "number",
+                "DefaultValue": 0,
+                "accessor": "offset",
+                "value": 0
+            },
+            {
+                "name": "Apply to",
+                "type": "select",
+                "DefaultValue": "close",
+                "accessor": "applyTo",
+                "value": "",
+                "SelectList": [
+                    {
+                        "name": "Close",
+                        "value": "close"
+                    },
+                    {
+                        "name": "Open",
+                        "value": "open"
+                    },
+                    {
+                        "name": "High",
+                        "value": "high"
+                    },
+                    {
+                        "name": "Low",
+                        "value": "low"
+                    },
+                    {
+                        "name": "Typical",
+                        "value": "typical"
+                    }
+                ]
+            }
+        ]
+    },
+    "CHOP.json": {
+        "IndicatorName": "Choppiness Index (CHOP)",
+        "identification": "CHOP",
+        "IndicatorProperties": [
+            {
+                "name": "CHOP rises",
+                "value": "rises",
+                "oppositeValue": "falls"
+            },
+            {
+                "name": "CHOP falls",
+                "value": "falls",
+                "oppositeValue": "rises"
+            },
+            {
+                "name": "CHOP crosses the level line upwards",
+                "value": "crosses_upward",
+                "oppositeValue": "crosses_downward"
+            },
+            {
+                "name": "CHOP crosses the level line downwards",
+                "value": "crosses_downward",
+                "oppositeValue": "crosses_upward"
+            },
+            {
+                "name": "CHOP changes its direction upwards",
+                "value": "change_upward",
+                "oppositeValue": "change_downward"
+            },
+            {
+                "name": "CHOP changes its direction downwards",
+                "value": "change_downward",
+                "oppositeValue": "change_upward"
+            }
+        ],
+        "Properties": [
+            {
+                "name": "Period",
+                "type": "number",
+                "DefaultValue": 14,
+                "accessor": "period",
+                "value": 14
+            },
+            {
+                "name": "Level",
+                "type": "number",
+                "DefaultValue": 61.8,
+                "accessor": "levelLine",
+                "value": 61.8
+            }
+        ]
+    }
+}

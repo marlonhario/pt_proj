@@ -1,0 +1,30 @@
+query getStrategyProfile($id: String!, $token: String! = "Test") {
+  getStrategyProfile(id: $id, token: $token) {
+    id
+    created_by_user_id
+    trade_list_json
+    editor_json
+    average_hpr
+    average_position_length
+    backtest_quality_percent
+    balance_line_stability
+    bars_in_trade_number
+    bars_in_trade_percent
+    count_of_trades
+    max_consecutive_losses
+    max_drawdown_number
+    max_drawdown_percent
+    months_of_profit
+    net_balance
+    net_profit
+    profit_factor
+    profit_per_day
+    r_squared
+    return_drawdown
+    sharpe_ratio
+    max_stagnation_number
+    max_stagnation_number
+    system_quality_number
+    win_loss
+  }
+}

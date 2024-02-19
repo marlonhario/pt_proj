@@ -1,0 +1,150 @@
+.bts-row-parent{
+    margin: 0px;
+}
+.bts-row{
+    margin-left: 0px;
+    width: 100%;
+}
+
+.bts-row-top{
+    background: #f7f7f7;
+    border-bottom: 4px solid #70bbfd;
+}
+
+.bts-formgroup,
+.bts-formgroup-select{
+    padding: 10px;
+}
+
+.bts-formgroup-select{
+    width: 200px;
+}
+
+.bts-formgroup label,
+.bts-formgroup-select label{
+    width: 100%;
+    display: initial;
+    font-weight: bold;
+}
+
+.bts-formgroup input,
+.bts-formgroup-select input{
+    width: 100% !important;
+    display: initial;
+    font-weight: bold;
+    font-size: 12px;
+    height: 40px;
+    border: 1px #ccc solid;
+    border-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    color: #495057;
+}
+
+.bts-formgroup-select select{
+    width: 100% !important;
+    display: initial;
+    font-weight: bold;
+    font-size: 12px;
+    height: 40px;
+}
+
+.bts-analyze-btn{
+    font-size: 12px;
+    margin-top: 39px;
+}
+
+.bts-datepicker{
+    text-align: center;
+    cursor: pointer;
+}
+
+.bts-formgroup .react-datepicker-wrapper{
+    width: 49%;
+}
+
+.bts-formgroup .react-datepicker-margin{
+    width: 2%;
+}
+
+.bts-stoploss-holder{
+    width: 100px;
+}
+
+.bts-result{
+    padding: 10px;
+}
+
+.bts-graph{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+}
+
+.bts-graph-no-data{
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    width: 30%;
+    min-height: 12%;
+    margin: auto;
+    margin-top: 22%;
+    text-align: center;
+}
+
+.bts-graph-image{
+
+    width: 49%;
+    margin: auto;
+    border: 1px #ccc solid;
+    min-height: 200px;
+    background: #000;
+    float: left;
+    margin-right: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bts-graph-image img{
+    width: 100%;
+    height: auto;
+}
+
+.bts-graph-image-label{
+    width: 100%;
+    font-size: 20px;
+    background: #cce6ff;
+    padding: 10px;
+    border-bottom: 1px #ccc solid;
+}
+
+.bts-top-spinner{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.bts-row-parent form .btn.disabled, 
+.bts-row-parent form .btn.btn-primary.disabled, 
+.bts-row-parent form .btn.btn-danger.disabled, 
+.bts-row-parent form .btn.btn-warning.disabled, 
+.bts-row-parent form .btn.btn-success.disabled, 
+.bts-row-parent form .btn.btn-outline-secondary.disabled, 
+.bts-row-parent form .btn.btn-secondary.disabled, 
+.bts-row-parent form .btn.btn-outline-primary.disabled, 
+.bts-row-parent form .btn.btn-outline-danger.disabled, 
+.bts-row-parent form .btn.btn-outline-warning.disabled, 
+.bts-row-parent form .btn.btn-outline-success.disabled, 
+.bts-row-parent form .btn.icon.disabled, 
+.bts-row-parent form .btn.icon.btn-secondary.disabled {
+    background-color: #333;
+    border-color: #f2f4f7;
+    color: #fff;
+    pointer-events: none;
+}
+
+.bts-result .badge{
+    font-size: 12px;
+}

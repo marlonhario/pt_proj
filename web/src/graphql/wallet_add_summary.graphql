@@ -1,0 +1,16 @@
+mutation AddSummary(
+	$currency_code: String!,
+	$balance: String!,
+	$debit: String!,
+	$credit: String!,
+	$date: String!,
+) {
+  addSummary(
+		currency_code: $currency_code,
+		balance: $balance,
+		debit: $debit,
+		credit: $credit,
+		date: $date,
+	)
+}
+

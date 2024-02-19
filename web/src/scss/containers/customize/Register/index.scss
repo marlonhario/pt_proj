@@ -1,0 +1,7 @@
+.Register.account {
+    background: #f2f4f7;
+}
+
+.RegisterForm__container {
+    @extend .LogInForm__container;
+}

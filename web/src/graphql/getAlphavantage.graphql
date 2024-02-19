@@ -1,0 +1,18 @@
+query alphavantageSearch($symbol: String, $haveData: Boolean) {
+  alphavantageSearch(symbol: $symbol, haveData: $haveData) {
+    name
+    symbol
+    timezone
+    type
+    marketOpen
+    marketClose
+    timezone
+    currency
+    matchScore
+    exchange
+    period
+    number_data_records
+    first_data
+    last_data
+  }
+}

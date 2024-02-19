@@ -1,0 +1,29 @@
+{
+  "IndicatorName": "Awesome Oscillator",
+  "IndicatorProperties": [
+    {
+      "name": "AO rises",
+      "value": "aorises"
+    },
+    {
+      "name": "AO falls",
+      "value": "aofalls"
+    }
+  ],
+  "Properties": [
+    {
+      "name": "Fast Period",
+      "accessor": "fastPeriod",
+      "type": "number",
+      "DefaultValue": 0,
+      "value": ""
+    },
+    {
+      "name": "Slow Period",
+      "accessor": "slowPeriod",
+      "type": "number",
+      "DefaultValue": 0,
+      "value": ""
+    }
+  ]
+}

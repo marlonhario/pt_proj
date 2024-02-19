@@ -1,0 +1,124 @@
+.LogIn.account {
+    background: #f2f4f7;
+}
+
+.LogInForm__container {
+    font-size: 16px;
+
+    .form__form-group {
+        .form__form-group-field {
+            border: 1px solid #999999 !important;
+            border-radius: 5px;
+            overflow: hidden;
+
+            .form__form-group-icon,
+            .show_password {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+
+            input {
+                font-size: 16px;
+                border: none;
+            }
+
+            &.remember_me {
+                border: none !important;
+                $color-blue: #70bbfd;
+
+                .checkbox {
+                    width: 100%;
+                    margin: 15px auto;
+                    position: relative;
+                    display: block;
+
+                    label {
+                        color: $color-blue;
+                        position: relative;
+                        min-height: 34px;
+                        display: block;
+                        padding-left: 40px;
+                        margin-bottom: 0;
+                        font-weight: normal;
+                        cursor: pointer;
+
+                        span {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            margin: 4px;
+                            width: 22px;
+                            height: 22px;
+                            transition: transform 0.28s ease;
+                            border-radius: 3px;
+                            border: 2px solid $color-blue;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 10px;
+                            height: 5px;
+                            border-bottom: 2px solid $color-blue;
+                            border-left: 2px solid $color-blue;
+                            transform: rotate(-45deg) scale(0);
+                            transition: transform ease 0.25s;
+                            position: absolute;
+                            top: 12px;
+                            left: 10px;
+                        }
+                    }
+
+                    input[type="checkbox"] {
+                        width: auto;
+                        opacity: 0.00000001;
+                        position: absolute;
+                        left: 0;
+                        margin-left: -20px;
+
+                        &:checked~label {
+                            &:before {
+                                border: 2px solid $color-blue;
+                            }
+
+                            &:after {
+                                transform: rotate(-45deg) scale(1);
+                            }
+                        }
+
+                        &:focus+label::before {
+                            outline: 0;
+                        }
+                    }
+                }
+            }
+
+            &.password_field {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .account__forgot-password,
+    button,
+    .btn {
+        font-size: 16px;
+    }
+
+    button,
+    .btn {
+        font-weight: bold;
+    }
+
+    span.checkbox-btn__checkbox-custom {
+        display: flex;
+        align-items: flex-end;
+    }
+}

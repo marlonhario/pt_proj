@@ -1,0 +1,11 @@
+mutation RetrieveStrategies($id: String!) {
+    retrieveStrategies(id: $id) {
+        strategies {
+            id
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

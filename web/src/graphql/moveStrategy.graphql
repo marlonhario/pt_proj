@@ -1,0 +1,3 @@
+mutation moveStrategy($token: String!, $data: String!) {
+  moveStrategy(token: $token, data: $data)
+}

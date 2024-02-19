@@ -1,0 +1,7 @@
+mutation AlpacaPortfolio(
+	$token: String!
+) {
+  alpacaPortfolio(
+		token: $token
+	)
+}

@@ -1,0 +1,24 @@
+query GetPaperTradingById($data: PaperTradingInput!) {
+  getPaperTradingById(data: $data) {
+    paper_trading {
+      id
+      user_id
+      cumul_return
+      strategies {
+        id
+        net_profit
+        max_drawdown_number
+        count_of_trades
+        profit_factor
+        months_of_profit
+        source
+        source_parent
+        order
+        group
+        group_order
+        editor_json
+        group_name
+      }
+    }
+  }
+}

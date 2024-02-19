@@ -1,0 +1,13 @@
+mutation SaveDeposit($data: SaveDepositInput!){
+  saveDeposit(data: $data) {
+    deposit {
+      id
+      minimum_wallet_balance
+      amount_deposit
+      bank_account
+      is_auto
+      is_min_automatic
+      is_amt_automatic
+    }
+  }
+}

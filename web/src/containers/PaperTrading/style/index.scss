@@ -1,0 +1,24 @@
+$color-red: #ff4861;
+$color-yellow: #f6da6e;
+$color-green: #4ce1b6;
+h4 {
+  &.paper-trading__text {
+    &--red {
+      color: $color-red;
+    }
+    &--yellow {
+      color: $color-yellow;
+    }
+  }
+}
+.paper-trading__text {
+  &--red {
+    color: $color-red;
+  }
+  &--yellow {
+    color: $color-yellow;
+  }
+  &--green {
+    color: $color-green;
+  }
+}

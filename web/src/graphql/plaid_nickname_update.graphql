@@ -1,0 +1,10 @@
+mutation PlaidNicknameUpdate(
+  $id: Float!,
+  $value: String!
+) {
+  plaidNicknameUpdate(
+    id: $id,
+    value: $value
+  )
+}
+

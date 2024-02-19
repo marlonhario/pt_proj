@@ -1,0 +1,123 @@
+.wallet-header {
+    @include directify($directions) {
+        text-align: directed('left');
+    }
+    opacity: 0.7;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    color: #3b3a3a;
+    margin-top: 3px;
+    text-transform: uppercase;
+    .theme-dark & {
+        color: #dddddd;
+    }
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wallet-dots {
+    height: 46px;
+    width: 45px;
+    border-radius: 50%;
+    padding-right: 10px;
+    padding-left: 15px;
+    float: right;
+}
+
+.wallet-center-content {
+    margin: 0 auto;
+    display: table;
+}
+
+.wallet-btn-fund {
+    height: 46px;
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 0.9em;
+    float: right;
+    margin-left: 15px;
+    background-color: #fa8a0a;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wallet-body {
+    @include directify($directions) {
+        text-align: directed('left');
+    }
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    color: #0f0f0f;
+    margin-top: 3px;
+    text-transform: uppercase;
+    .theme-dark & {
+        color: #dddddd;
+    }
+    width: 200px;
+}
+
+.wallet-title {
+    opacity: 0.7;
+}
+
+.progress {
+    height: 25px;
+}
+
+.wallet_collapse__title {
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 1.2em;
+    opacity: 0.7;
+}
+
+.wallet_collapse__icon {
+    float: right;
+}
+
+.wallet_about__btn {
+    font-size: 1.4em;
+}
+
+.wallet-value {
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wallet-btn-center {
+    margin: 0px;
+}
+
+.checkbox-enable-auto-deposit {
+    font-size: 20px;
+}
+
+.check-enable-auto-deposit {
+    width: 39px;
+    height: 32px;
+    text-align: center;
+}
+
+.checkbox-label-ead {
+    margin-left: 30px;
+}
+
+.label-automatic {
+    margin: 0 auto;
+    display: table;
+    padding: 2px;
+}
+
+.span_no_bank_account {
+    padding: 10px;
+    margin: 0 auto;
+    display: table;
+}
+
+.label-deposit-values {
+    padding: 2px;
+}

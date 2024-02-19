@@ -1,0 +1,23 @@
+query getMarketDataSymbol($symbol: String, $interval: String) {
+  getMarketDataSymbol(symbol: $symbol, interval: $interval) {
+    market {
+      currency
+      name
+    }
+    market_data {
+      id
+      interval
+      symbol
+      open
+      close
+      high
+      low
+      volume
+      last_update
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

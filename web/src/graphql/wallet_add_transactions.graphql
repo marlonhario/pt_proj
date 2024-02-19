@@ -1,0 +1,18 @@
+mutation AddTransactions(
+	$transaction_type: String!,
+	$currency_code: String!,
+	$balance: String!,
+	$amount: String!,
+	$date: String!,
+	$name: String!,
+) {
+  addTransactions(
+		transaction_type: $transaction_type,
+		currency_code: $currency_code,
+		balance: $balance,
+		amount: $amount,
+		date: $date,
+		name: $name,
+	)
+}
+

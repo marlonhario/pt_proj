@@ -1,0 +1,11 @@
+{
+    "stockData": [],
+    "technicalIndicators": {
+        "entry": [{ "name": "awesome_oscillator", "options": { "signal": "rises", "levelLine": 0, "fastPeriod": 12, "slowPeriod": 26 } }],
+        "exit": [{ "name": "awesome_oscillator", "options": { "signal": "below_level_line", "levelLine": 0, "fastPeriod": 12, "slowPeriod": 26 } }]
+    },
+    "stopLoss": { "isEnabled": false, "type": "Not used", "value": 100 },
+    "takeProfit": { "isEnabled": false, "value": 100 },
+    "tradeSize": 10000,
+    "spread": 0
+}

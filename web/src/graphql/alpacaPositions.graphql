@@ -1,0 +1,7 @@
+mutation AlpacaPositions(
+	$token: String!
+) {
+  alpacaPositions(
+		token: $token
+	)
+}

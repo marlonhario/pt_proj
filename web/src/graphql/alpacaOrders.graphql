@@ -1,0 +1,7 @@
+mutation AlpacaOrders(
+	$token: String!
+) {
+  alpacaOrders(
+		token: $token
+	)
+}

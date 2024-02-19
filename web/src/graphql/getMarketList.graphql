@@ -1,0 +1,15 @@
+query GetMarketList{
+  getMarketList {
+    market {
+      id
+      name
+      symbol
+      exchange
+      currency
+    }
+    errors {
+      message
+      field
+    }
+  }
+}

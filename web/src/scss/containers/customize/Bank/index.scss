@@ -1,0 +1,223 @@
+
+.Bank__container {
+	.Bank__list-container {
+		max-height: 600px;
+		overflow: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+    min-height: 100px;
+
+		.load__icon-wrap {
+			display: flex;
+			min-height: 100px;
+			overflow: hidden;
+		}
+
+		.Bank__none {
+			text-align: center;
+			margin-top: 50px;
+		}
+	}
+
+	.Bank__logo {
+		img {
+			height: 60px;
+			width: 60px;
+		}
+	}
+	
+	.Bank__row {
+    min-height: 110px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #f2f4f7;
+    width: 100%;
+		margin: 0;
+
+		&:hover {
+			background: #f2f4f7;
+
+			input {
+				background: #f2f4f7;
+			}
+		}
+	}
+	
+	.Bank__header {
+		font-size: 16px;	
+		padding-right: 0;	
+	}
+
+	.Bank__details {
+		align-items: baseline;
+	}
+
+	.Bank__add {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		margin-bottom: 20px !important;
+
+		button {
+			margin-top: 10px;
+			width: max-content;
+			background: #fab131;
+		}
+	}
+
+	input {
+		padding: 5px 10px;
+		font-size: 16px;
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+
+		&:focus {
+			border-top: 0 !important;
+			border-right: 0 !important;
+			border-left: 0 !important;
+			border-color: black;
+			outline: none;
+		}
+	}
+
+	button {
+		margin: 0;
+		width: max-content;
+		background: #fab131 !important;
+	}
+
+	.Bank__cancel {
+		background: none !important;
+		color: grey;
+		border: none;
+		margin-left: 20px;
+
+		&:hover {
+			background: #fab131 !important;
+			color: white;
+			border: none;
+		}
+	}
+
+	.Bank__list {
+		display: flex;
+		justify-content: space-between;
+		// border: 1px solid red;
+		align-items: center;
+
+		&.container {
+			display: flex;
+			width: max-content;
+			padding: 0;
+
+			& > div > div {
+				display: flex;
+				justify-content: center;
+			}
+
+			.Bank__edit {
+				color: #c1c1c1;
+				cursor: pointer;	
+				margin-left: 10px;
+
+				&:hover {
+					color: grey;
+				}
+			}
+
+			.Bank__nickname,
+			.Bank__institution {
+				font-size: 16px;
+			}
+
+			.Bank__date {
+				color: grey;
+			}
+		}
+
+		& > div {
+			margin: 0;
+			display: flex;
+
+			&:first-child {
+				& > div {
+					margin-right: 20px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+		}
+
+		.Bank__remove {
+			span {
+				color: grey;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.Bank__update-container {
+		display: flex !important;
+		flex-direction: row !important;
+	}
+}
+
+.Bank__modal{
+	.modal-content {
+    border-radius: 10px;
+		text-align: left;
+		padding-bottom: 0;
+	}
+
+	button.Bank__delete {
+    margin-bottom: 5px;
+		background: #fab131;
+	}
+
+	button.Bank__cancel {
+		background: #fff;
+		border: none;
+		color: grey;
+
+		&:hover {
+			background: #fab131;
+			color: #fff
+		}
+	}
+
+	button.close {
+		position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+	}	
+}
+
+
+@media screen and (max-width: 1040px) {
+	.Bank__container {
+		.Bank__row.update {
+			.Bank__list  {
+				flex-direction: column;
+
+				div {
+					margin: 0 !important;
+					margin-top: 10px !important;
+				}
+			}
+		}
+	}
+}

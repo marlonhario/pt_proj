@@ -1,0 +1,13 @@
+mutation GetRememberMe($token: String!) {
+    getRememberMe(token: $token) {
+        user {
+            id
+            email
+            admin
+            first_name
+            last_name
+            profile_image
+            time_zone
+        }
+    }
+}
